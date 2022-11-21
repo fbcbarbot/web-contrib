@@ -2,6 +2,7 @@ pipeline:
   install:
     image:   node:8.9.4
     commands:
+      - ls
       - git config --global url."https://".insteadOf ssh://git@
       - npm install --unsafe-perm --quiet
 
